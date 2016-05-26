@@ -1,6 +1,10 @@
 ##Array
 
-As administrator of Cape Side High you have the ability to make changes to your records regarding staff and the students attending the high school. In an attempt to get organized and clean up some records you've decided to make the following changes: 
+![](https://cloud.githubusercontent.com/assets/15805090/15586111/aaf241c0-2350-11e6-8470-b5de54a0c386.jpg)
+
+Listen to this [song](https://youtu.be/8iagmMy7JEE) to get amped for Capeside high.
+
+As administrator of the high school you have the ability to make changes to your records regarding staff and the students attending the high school. In an attempt to get organized and clean up some records you've decided to make the following changes: 
 
 Start by declaring the following methods in the `FISAppDelegate.h`:
 
