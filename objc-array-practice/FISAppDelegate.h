@@ -12,15 +12,5 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
--(NSString *)assigningTeacher:(NSArray*)teacherRoster toRooms:(NSArray*)rooms;
-
--(NSArray*)replacingTeacher:(NSArray*)teacherRoster withteacher:(NSString*)substitute;
-
--(NSUInteger)duplicateStudent:(NSArray*)mathClass student:(NSString *)student;
-
--(NSString*)signForPrinter:(NSArray*)backwardsPhrase;
-
--(NSArray*)removeOpeningAndClosingShifts:(NSArray*)schedule;
-
 @end
 
