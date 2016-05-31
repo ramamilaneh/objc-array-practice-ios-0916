@@ -16,30 +16,82 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     // Override point for customization after application launch.
+    
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application {
-    // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-    // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
+-(NSString *)assigningTeacher:(NSArray*)teacherRoster toRooms:(NSArray*)rooms{
+    
+    NSString *assignments = @"";
+    
+    for (NSUInteger i = 0; i < teacherRoster.count; i++) {
+        
+        NSString *room = rooms[i];
+        
+        if ([teacherRoster[i] isEqualToString:teacherRoster.lastObject]) {
+            assignments = [assignments stringByAppendingFormat:@"Welcome %@, your classroom is %@.", teacherRoster[i], room];
+        }else{
+        assignments = [assignments stringByAppendingFormat:@"Welcome %@, your classroom is %@.\n", teacherRoster[i], room];
+        }
+    }
+    
+    NSLog(@"%@", assignments);
+    return assignments;
 }
 
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+-(NSArray*)replacingTeacher:(NSArray*)teacherRoster withteacher:(NSString*)substitute{
+    
+    NSMutableArray *newRoster = [teacherRoster mutableCopy];
+    
+    for (NSUInteger i = 0; i < teacherRoster.count; i++) {
+        if ([teacherRoster[i] isEqualToString:@"Mrs. Jacobs"]) {
+            [newRoster replaceObjectAtIndex:i withObject:substitute];
+        }
+        
+    }
+    NSLog(@"newroster: %@", newRoster);
+    return newRoster;
 }
 
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-    // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
+-(NSUInteger)duplicateStudent:(NSArray*)mathClass student:(NSString *)student{
+    
+    NSUInteger count = 0;
+    
+    for (NSString *name in mathClass) {
+        if ([name isEqualToString:student]) {
+            count++;
+        }
+    }
+    NSLog(@"count: %lu", count);
+    return count;
 }
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
-    // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+-(NSString*)signForPrinter:(NSArray*)backwardsPhrase{
+    
+    NSMutableString *phrase = [[NSMutableString alloc]init];
+    
+    for (NSInteger i = [backwardsPhrase count]-1; i >= 0; i--) {
+        
+        [phrase appendFormat:@"%@ ", backwardsPhrase[i]];
+    }
+    
+    NSLog(@"phrase: %@", phrase);
+    return phrase;
 }
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+-(NSArray*)removeOpeningAndClosingShifts:(NSArray*)schedule{
+    
+    NSMutableArray *mSchedule = [schedule mutableCopy];
+    
+    [mSchedule removeLastObject];
+    [mSchedule removeObjectAtIndex:0];
+    
+    NSLog(@"%@", mSchedule);
+    return mSchedule;
 }
+
+
 
 @end
