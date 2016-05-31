@@ -92,6 +92,4 @@
     return mSchedule;
 }
 
-
-
 @end
