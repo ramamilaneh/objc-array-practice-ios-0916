@@ -1,18 +1,18 @@
 //
 //  AppDelegate.m
-//  ArrayPractice
+//  objc-array-practice
 //
-//  Created by Flatiron School on 5/26/16.
+//  Created by Flatiron School on 5/31/16.
 //  Copyright © 2016 Flatiron School. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "FISAppDelegate.h"
 
-@interface AppDelegate ()
+@interface FISAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation FISAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
