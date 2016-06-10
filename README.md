@@ -1,6 +1,8 @@
-##Array
+#Array Practice
 
 ![](https://cloud.githubusercontent.com/assets/15805090/15586111/aaf241c0-2350-11e6-8470-b5de54a0c386.jpg)
+
+##Introduction
 
 Listen to this [song](https://youtu.be/8iagmMy7JEE) to get amped for Capeside high.
 
@@ -14,6 +16,7 @@ Start by declaring the following methods in the `FISAppDelegate.h`:
 * `signForPrinter:` takes one `NSArray` argument named `backwardsPhrase` and returns a `NSString`.
 * `removeOpeningAndClosingShifts:` takes one `NSArray` argument named `schedule` and returns and `NSArray`.
 
+##Instructions
 **1.** It's the first day of school at Capeside High! Get your teachers assigned their classrooms.
 
 `assigningTeacher:toRooms:` should return a string with the teachers name and room assignment in this format `"Welcome <#teacher's name>, your classroom is <#room>. ` each on a new line. 
@@ -30,7 +33,7 @@ Start by declaring the following methods in the `FISAppDelegate.h`:
 
 `signForPrinter:` should return a string with the correct phrase. Somehow it was reversed and you need to set it right. 
 
-**5.** Your star student Joey has been taking too many shifts down at the Ice House Restaurant and it's effecting her shcool work. Help her fix the schedule by removing her opening and closing shifts from the scheudle. 
+**5.** Your star student Joey has been taking too many shifts down at the Ice House Restaurant and it's effecting her shcool work. Help her fix the schedule by removing her opening and closing shifts from the scheudle. Being that this is a schedule, preserving the order of shiftworkers is important. 
 
 `removeOpeningAndClosingShifts:schedule` should return the updated schedule array that removes Joey's name from the first and last position. 
 

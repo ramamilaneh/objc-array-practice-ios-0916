@@ -24,9 +24,7 @@
 
 /*
  
- Write methods here.
+ Define methods here!
  
-*/
-
-
+ */
 @end

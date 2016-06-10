@@ -11,6 +11,10 @@
 @interface FISAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+/*
+ 
+ Declare methods here!
+ 
+ */
 
 @end
-

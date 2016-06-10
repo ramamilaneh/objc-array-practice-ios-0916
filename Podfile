@@ -14,6 +14,7 @@ target 'objc-array-practice' do
     # Pods for testing
     pod ‘Specta’
     pod ‘Expecta’
+    pod 'Expecta+Collections'
   end
 
   target 'objc-array-practiceUITests' do

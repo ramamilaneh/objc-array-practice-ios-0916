@@ -10,6 +10,7 @@
 #import "Specta.h"
 #import "Expecta.h"
 #define EXP_SHORTHAND
+#import <EXPMatchers+equalInAnyOrder.h>
 #import "FISAppDelegate.h"
 
 
@@ -29,10 +30,6 @@ describe(@"FISAppDelegate", ^{
     __block NSArray *schedule;
     __block NSString *teacherGreeting;
     __block NSArray *updatedRoster;
-    
-    beforeAll(^{
-
-    });
     
     beforeEach(^{
         
@@ -101,7 +98,7 @@ describe(@"FISAppDelegate", ^{
     
     describe(@"replacingTeacher:withTeacher:", ^{
         it(@"should return an array with replaced teacher", ^{
-            expect([appDelegate replacingTeacher:teacherRoster withteacher:substitute]).to.equal(updatedRoster);
+            expect([appDelegate replacingTeacher:teacherRoster withteacher:substitute]).to.equalInAnyOrder(updatedRoster);
         });
     });
     
