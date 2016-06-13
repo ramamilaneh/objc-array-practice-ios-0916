@@ -1,6 +1,6 @@
 #Array Practice
 
-![](https://cloud.githubusercontent.com/assets/15805090/15586111/aaf241c0-2350-11e6-8470-b5de54a0c386.jpg)
+![](images/Cast1season.png)
 
 ##Introduction
 
@@ -25,6 +25,8 @@ Start by declaring the following methods in the `FISAppDelegate.h`:
 
 `replacingTeacher:withTeacher:` should return a `NSArray` with the new list of teachers. 
 
+![](images/crying-dawson.gif)
+
 **3.** While clearing out your records you noticed that Principle Peskin has added duplicate student names to a math class.
 
 `duplicateStudents:` should return a `NSUInteger` count of times a sudent's name appears.
@@ -36,6 +38,8 @@ Start by declaring the following methods in the `FISAppDelegate.h`:
 **5.** Your star student Joey has been taking too many shifts down at the Ice House Restaurant and it's effecting her shcool work. Help her fix the schedule by removing her opening and closing shifts from the scheudle. Being that this is a schedule, preserving the order of shiftworkers is important. 
 
 `removeOpeningAndClosingShifts:schedule` should return the updated schedule array that removes Joey's name from the first and last position. 
+
+![](images/joeyShrugs.gif)
 
 
 
