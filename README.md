@@ -1,6 +1,6 @@
 #Array Practice
 
-![](images/Cast1season.png)
+![](https://s3.amazonaws.com/learn-verified/susan+-+Cast1season.png)
 
 ##Introduction
 
@@ -25,7 +25,7 @@ Start by declaring the following methods in the `FISAppDelegate.h`:
 
 `replacingTeacher:withTeacher:` should return a `NSArray` with the new list of teachers. 
 
-![](images/crying-dawson.gif)
+![](https://s3.amazonaws.com/learn-verified/susan+-+cryingDawson.gif)
 
 **3.** While clearing out your records you noticed that Principle Peskin has added duplicate student names to a math class.
 
@@ -39,7 +39,7 @@ Start by declaring the following methods in the `FISAppDelegate.h`:
 
 `removeOpeningAndClosingShifts:schedule` should return the updated schedule array that removes Joey's name from the first and last position. 
 
-![](images/joeyShrugs.gif)
+![](https://s3.amazonaws.com/learn-verified/susan+-+joeyShrugs.gif)
 
 
 
