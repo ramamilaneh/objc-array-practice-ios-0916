@@ -1,10 +1,12 @@
 #Array Practice
 
+Listen to this [song](https://youtu.be/8iagmMy7JEE) to get amped for Capeside high.
+
 ![](https://s3.amazonaws.com/learn-verified/susan+-+Cast1season.png)
 
 ##Introduction
 
-Listen to this [song](https://youtu.be/8iagmMy7JEE) to get amped for Capeside high.
+
 
 As administrator of the high school you have the ability to make changes to your records regarding staff and the students attending the high school. In an attempt to get organized and clean up some records you've decided to make the following changes: 
 
