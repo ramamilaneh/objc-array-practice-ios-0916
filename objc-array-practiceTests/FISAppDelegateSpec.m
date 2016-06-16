@@ -102,20 +102,20 @@ describe(@"FISAppDelegate", ^{
         });
     });
     
-    describe(@"duplicateStudent:student:", ^{
+    describe(@"duplicateStudents:student:", ^{
         it(@"should return the count of student occurances", ^{
             
             expect([appDelegate duplicateStudents:mathClass student:firstStudent]).to.equal(2);
         });
     });
     
-    describe(@"duplicateStudent:student:", ^{
+    describe(@"duplicateStudents:student:", ^{
         it(@"should return the count of student occurances", ^{
             expect([appDelegate duplicateStudents:mathClass student:secondStudent]).to.equal(1);
         });
     });
     
-    describe(@"duplicateStudent:student:", ^{
+    describe(@"duplicateStudents:student:", ^{
         it(@"should return the count of student occurances", ^{
             expect([appDelegate duplicateStudents:mathClass student:thirdStudent]).to.equal(3);
         });
