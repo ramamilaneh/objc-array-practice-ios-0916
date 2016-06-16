@@ -98,26 +98,26 @@ describe(@"FISAppDelegate", ^{
     
     describe(@"replacingTeacher:withTeacher:", ^{
         it(@"should return an array with replaced teacher", ^{
-            expect([appDelegate replacingTeacher:teacherRoster withteacher:substitute]).to.equalInAnyOrder(updatedRoster);
+            expect([appDelegate replacingTeacher:teacherRoster withTeacher:substitute]).to.equalInAnyOrder(updatedRoster);
         });
     });
     
     describe(@"duplicateStudent:student:", ^{
         it(@"should return the count of student occurances", ^{
             
-            expect([appDelegate duplicateStudent:mathClass student:firstStudent]).to.equal(2);
+            expect([appDelegate duplicateStudents:mathClass student:firstStudent]).to.equal(2);
         });
     });
     
     describe(@"duplicateStudent:student:", ^{
         it(@"should return the count of student occurances", ^{
-            expect([appDelegate duplicateStudent:mathClass student:secondStudent]).to.equal(1);
+            expect([appDelegate duplicateStudents:mathClass student:secondStudent]).to.equal(1);
         });
     });
     
     describe(@"duplicateStudent:student:", ^{
         it(@"should return the count of student occurances", ^{
-            expect([appDelegate duplicateStudent:mathClass student:thirdStudent]).to.equal(3);
+            expect([appDelegate duplicateStudents:mathClass student:thirdStudent]).to.equal(3);
         });
     });
     
