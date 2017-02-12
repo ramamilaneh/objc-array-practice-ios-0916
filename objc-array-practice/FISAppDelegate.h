@@ -11,10 +11,16 @@
 @interface FISAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-/*
- 
- Declare methods here!
- 
- */
+
+-(NSString *)assigningTeacher:(NSArray*)teacherRoster toRooms:(NSArray*)rooms;
+
+-(NSArray*)replacingTeacher:(NSArray*)teacherRoster withTeacher:(NSString*)substitute;
+
+-(NSUInteger)duplicateStudents:(NSArray*)mathClass student:(NSString *)student;
+
+-(NSString*)signForPrinter:(NSArray*)backwardsPhrase;
+
+-(NSArray*)removeOpeningAndClosingShifts:(NSArray*)schedule;
+
 
 @end
